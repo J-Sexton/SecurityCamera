@@ -8,7 +8,7 @@ const myCamera = new camera({
     preview: true,
 });
 
-module.exports({
+module.exports= {
     record : function(){
         myCamera.record()
             .then((result) => {
@@ -18,4 +18,4 @@ module.exports({
                 console.log(error);
             });
     }
-})
+}
