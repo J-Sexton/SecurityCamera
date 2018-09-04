@@ -1,5 +1,5 @@
 const express = require('express');
-const camera = require
+const camera = require('./camera');
 
 var app = express();
 
