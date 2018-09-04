@@ -8,10 +8,14 @@ const myCamera = new camera({
     preview: true,
 });
 
-myCamera.record()
-    .then((result) => {
-       console.log('captured video');
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+module.exports({
+    record : function(){
+        myCamera.record()
+            .then((result) => {
+                console.log('captured video');
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+})
